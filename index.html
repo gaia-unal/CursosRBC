@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Cursos Virtuales Personalizados</title>
+        <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+        <link rel="shortcut icon" href="images/demo-images/icons/favicon.ico" type="image/x-ic"/>
+        <link href='http://fonts.googleapis.com/css?family=Raleway:300' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Berkshire+Swash' rel='stylesheet' type='text/css'>
+</head>
+<body>
+    <!-- BARRA SUPERIOR -->
+	<header>
+    	<div id="subheader">
+            <div id="logo">
+            	<a href="#"><img src="images/logo.png" width="90%" height="96"/></a>
+            </div>
+                
+            <div id="formulario">
+                <form id="forml" name="forml" method="post" action="prehome.php">
+                    <h3>Inicie sesión</h3>
+                    <input type="text" name="nombre" autofocus required="required" placeholder="  Ingrese nombre" autocomplete="on"/>
+                    <input type="password" name="password" autofocus required="required" placeholder="  Ingrese contraseña"/>
+					<br/>
+					<SELECT id="dispo" name="dispo" required="required">
+							<OPTION value=>-- Seleccione -- </OPTION>
+							<OPTION value="pc">Computador</OPTION>
+							<OPTION value="t">Tablet</OPTION>
+							<OPTION value="c">Celular</OPTION>
+							<OPTION value="o">Otro</OPTION>
+					</SELECT>				
+                    <button type="submit" name="iniciar" >Iniciar</button>
+                </form>
+            </div>
+         </div>
+	</header>
+
+	<section id="wrap">
+            
+            <section id="registro">
+                <form id="forml" name="forml" method="post" action="registro.php">
+                    <h3>Regístrate</h3><br>
+                    	<div class="input">
+                           <div id='nombres'>Nombre de Usuario: <input type="text" name="nombre" id="nombre" required autocomplete="on" maxlength="20"></div>
+                           <div id='nombres'>Contraseña: <input type="password" name="password" id="password" required autocomplete="on" maxlength="20"/></div>
+                           <div id='nombres'>Confirme Contraseña: <input type="password" name="repassword" id="repassword" required autocomplete="on" maxlength="20"/></div>
+                           <div id='nombres'>Nombre Completo: <input type="text" name="nombreEstu" id="nombreEstu" required autocomplete="on" maxlength="40"></div> 
+                           <div id='nombres'>E-mail: <input type="email" name="email" id="email" required autocomplete="on" maxlength="40"/></div> 
+                           <div id='nombres'>Genero: <select id="genero" name="genero">
+                                <option value=#>-- Seleccione -- </option>
+                                <option value='femenino'> Femenino </option>
+                                <option value='masculino'> Masculino </option>
+                            </select></div> 
+                           <div id='nombres'>Idioma preferencia: 
+                           <select id=language name=language>
+                                <option value=#>-- Seleccione -- </option>
+                                <option value='sp'> Español </option>
+                                <option value='pt'> Portugués </option>
+                                <option value='en'> Inglés </option>
+                            </select></div>
+                        </div>
+                    <br>
+                    <p>Al hacer clic en Regístrate, aceptas las Condiciones y que has leído la Política de uso de datos, incluido el Uso de cookies.</p>
+                    <br>
+                    <button type="submit" name="registrar" id="registrar">Crear cuenta</button>
+                </form>
+            </section>
+            
+            <section id="contenido">
+                
+            </section>
+    
+        </section> 
+<div id="copyright"><p>Copyright © 2014 | Todos los derechos reservados</p></div>
+</body>
+</html>

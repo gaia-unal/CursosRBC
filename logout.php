@@ -1,0 +1,9 @@
+<?php
+	session_start();
+	if(isset($_SESSION['NombreAutenicado'])){
+		unset($_SESSION['NombreAutenicado']);
+		unset($_SESSION['autenticado']);
+	}
+	session_destroy();
+	header("Location:index.html");
+?>
